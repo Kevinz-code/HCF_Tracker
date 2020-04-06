@@ -7,9 +7,7 @@ from cal_loss import get_bbox_classes
 
 def get_video():
     # read the default videos
-    # cap = cv2.VideoCapture("lan_data/move.mp4")
-    cap = cv2.VideoCapture("hand.mp4")
-    # cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(0)
 
     fps = cap.get(cv2.CAP_PROP_FPS)
     frame_all = cap.get(cv2.CAP_PROP_FRAME_COUNT)
@@ -96,7 +94,8 @@ def main():
         # cv2.imwrite("res/%04d.jpg" % i, frame)
         center_x = (x1 + x2) / 2.0
         center_y = (y1 + y2) / 2.0
-        with open("res/groundtruth.txt", "r") as f:
+        '''  # loss calculate 
+        with open("groundtruth.txt", "r") as f:
             line_all = f.readlines()
             cx, cy = line_all[i-1].strip().split(',')
             cx, cy = int(cx), int(cy)
@@ -106,7 +105,7 @@ def main():
             cal_average_pixel(error)
             print(" error pixels: {:.1f}, {:.1f}".format(acu_error, error))
             i += 1
-
+        '''
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     accumulate()
