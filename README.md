@@ -1,8 +1,8 @@
 # HCF_Tracker in Python
  
-Algorithms Name: Hierarchical Convolutional Features for Visual Tracking
-Author : Kevin Ke
-Date : 28th, March, 2020 
+> Algorithms Name: Hierarchical Convolutional Features for Visual Tracking
+> Author : Kevin Ke
+> Date : 28th, March, 2020 
 
 
 ### Requirements
