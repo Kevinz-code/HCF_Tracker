@@ -23,4 +23,4 @@ It will open the default camera of your computer, and the groundtruth for the fi
 
 ### Test on your own video
 For time reasons, I didn't add ArgumentParser. But you can edit my code in "main.py" by changing the "get_video" function. 
-Also remember to change the groundtruth in ./Truth.txt. 
+Also remember to change the groundtruth in ./Truth.txt.
