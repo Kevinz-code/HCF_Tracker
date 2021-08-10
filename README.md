@@ -1,7 +1,6 @@
 # HCF_Tracker in Python
  
 &nbsp;**Algorithms Name**: Hierarchical Convolutional Features for Visual Tracking </br>
-&nbsp;**Author**: Kevin Ke </br>
 &nbsp;**Date**: 28th, March, 2020 </br>
 
 
@@ -15,7 +14,7 @@
 ### Use
 Download the git and
 ```shell
-git clone https://github.com/kevin655/HCF_Tracker.git
+git clone https://github.com/Kevinz-code/HCF_Tracker.git
 cd HCF
 python main.py
 ```
